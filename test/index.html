@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Mock Test</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-9">
+            <h5 class="color1 text-center">Online Test - CAT Preparation</h5>
+            <div class="container">
+                <h6 class="mb-3">Quant - Question 1</h6>
+                <form action="">
+                    <label for="" class="mb-3">The arithmetic mean of the 5 consecutive integers starting with 's' is
+                        'a'. What is
+                        the arithmetic mean of 9
+                        consecutive integers that start with s + 2?</label>
+                    <input type="checkbox" id="a" name="a" value="A" class="mb-3">
+                    A. <label for="a">78</label><br>
+                    <input type="checkbox" id="b" name="b" value="B" class="mb-3">
+                    B. <label for="b">58 </label><br>
+                    <input type="checkbox" id="c" name="c" value="C" class="mb-3">
+                    C. <label for="c">68</label><br>
+                    <input type="checkbox" id="d" name="a" value="D" class="mb-3">
+                    D. <label for="a">98</label><br>
+                    <br><br>
+                </form>
+
+            </div>
+
+        </div>
+        <div class="col-md-3">
+            <div class="col1">
+                <h5 class="color2 text-center mb-3">Time Left</h5>
+                <p id="demo" class="time"></p>
+            </div>
+            <div class="col2 mb-3">
+
+                <h5 class="color2 text-center mb-3">Quant</h5>
+                <p class="spanp col-md-12">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                </p>
+                <p class="spanp">
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                    <span>11</span>
+                    <span>12</span>
+                </p>
+                <p class="spanp">
+                    <span>13</span>
+                    <span>14</span>
+                    <span>15</span>
+                    <span>16</span>
+                    <span>17</span>
+                    <span>18</span>
+                </p>
+                <p class="spanp">
+                    <span>19</span>
+                    <span>20</span>
+
+                </p>
+            </div>
+            <div class="col2">
+
+                <h5 class="color2 text-center mb-3">Quant</h5>
+                <p class="spanp col-md-12">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                </p>
+                <p class="spanp">
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                    <span>11</span>
+                    <span>12</span>
+                </p>
+                <p class="spanp">
+                    <span>13</span>
+                    <span>14</span>
+                    <span>15</span>
+                    <span>16</span>
+                    <span>17</span>
+                    <span>18</span>
+                </p>
+                <p class="spanp">
+                    <span>19</span>
+                    <span>20</span>
+
+                </p>
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="col-md-12 ">
+        <input type="submit" class="btn btn-primary" style="margin: auto;
+        display: block;">
+    </div>
+
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Feb 24, 2022 10:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = hours + "hr "
+                + minutes + "min " + seconds + "sec ";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+
+</body>
+
+</html>
